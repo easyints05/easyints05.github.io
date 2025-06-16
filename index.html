@@ -3,38 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My webpage</title>
+  <title>My Webpage</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
       color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #3976bc;
+      padding: 10px 20px;
+    }
+
+    .navbar .logo {
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 12px;
+      transition: background 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      background-color: #575757;
+      border-radius: 4px;
+    }
+
+    .content {
       padding: 20px;
     }
+
     h1 {
       color: #0066cc;
     }
+
     p {
       font-size: 16px;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to My Webpage</h1>
-  <p>This is Akshaya Sakhineti, Full Stack Web Developer</p>
 
-  <h2>My portfolio</h2>
-  <li>  <a href="akshayaspf.netlify.app">Portfolio</a><br>  </li>
-  <h2>Projects</h2>
-  <ul>
-   <li>  <a href="/p1/p1.html">Project1</a><br>  </li>
-   <li> <a href="/p2/p2.html">Project2</a><br>  </li>
-  </ul>
+  <nav class="navbar">
+    <div class="logo">Akshaya Sakhineti</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <h2> Assignments</h2>
-  <ul>
-   <li><a href="/a1/a1.html">Assignment1</a><br></li>
-   <li><a href="/a2/a2.html">Assignment2</a><br></li>
-  </ul>
+  <div class="content">
+    <h1>Welcome to My Webpage</h1>
+    <p>This is Akshaya Sakhineti, Full Stack Web Developer</p>
+
+    <h2 id="about">My Portfolio</h2>
+    <ul>
+      <li><a href="https://akshayaspf.netlify.app" target="_blank">Portfolio</a></li>
+    </ul>
+
+    <h2 id="projects">Projects</h2>
+    <ul>
+      <li><a href="/p1/p1.html">Project 1</a></li>
+      <li><a href="/p2/p2.html">Project 2</a></li>
+    </ul>
+
+    <h2>Assignments</h2>
+    <ul>
+      <li><a href="/a1/a1.html">Assignment 1</a></li>
+      <li><a href="/a2/a2.html">Assignment 2</a></li>
+    </ul>
+
+    <h2 id="contact">Contact</h2>
+    <p>Email: your.email@example.com</p>
+  </div>
+
 </body>
 </html>
