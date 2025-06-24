@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Webpage</title>
+
+  <style>
+    li{
+        display: inline-block;
+        width: 200px;
+        margin: 10px;
+
+    }
+    /* only in inline-block we can give properties like margin, width etc wher in inline , we cant */
+    /* div is a block level element */
+
+.flex{
+    display:flex;
+    justify-content: space-around; 
+    /* proper spaces around the elements*/
+    background-color: lightblue;
+    height: 300px;
+    align-items: center;
+    /* center the items vertically */
+    flex-wrap: wrap;
+    /* if the items are more than the width, they will wrap to the next line */
+    flex-direction:column;
+    /* change the direction of the items to column */
+} 
+.grid{
+display: grid;
+grid-template-columns: auto auto auto;
+background-color: lightsteelblue;
+column-gap: 100px;
+row-gap: 50px;
+height: 300px;
+}
+  </style> 
+  </head>
+
+  <body>
+    <h1>CSS display property</h1>
+    <h2 >inline vs inline block </h2>
+    <li>    Home   </li>
+    <li>    About  </li>
+    <li>    Contact</li>
+    <li>    Services</li>
+
+    <h2>Flexbox</h2>
+    <div class="flex">
+        <div>Child1</div>
+        <div>Child2</div>
+        <div>Child3</div>   
+        <div>Child4</div>
+        <div>Child5</div>
+        <div>Child6</div>
+    </div>
+
+     <h2>Grid</h2>
+    <div class="grid">
+        <div>Child1</div>
+        <div>Child2</div>
+        <div>Child3</div>   
+        <div>Child4</div>
+        <div>Child5</div>
+        <div>Child6</div>
+    </div>
+  </body>
+</html>
